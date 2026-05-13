@@ -5,6 +5,7 @@ This document tracks public release verification for showcase quality control.
 ## Process (for each new alpha tag)
 
 1. Run the QA gate checklist in issue [#5 Release QA Gate (Alpha)](https://github.com/tegllundj-dotcom/NulleCore-eAI/issues/5).
+   Optionally run `docs/scripts/Run-AlphaReleaseQaGate.ps1` to generate a deterministic QA summary.
 2. Validate release assets, checksums, and prerelease state.
 3. Add a new section in this file for the new release tag.
 4. Link the QA gate run comment and any relevant issue updates.

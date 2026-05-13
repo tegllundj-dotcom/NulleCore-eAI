@@ -40,6 +40,18 @@ Before each public release update:
 6. Confirm issue template still matches current test goals.
 7. Keep release marked as prerelease while in alpha.
 
+### Optional command helper (maintainers)
+
+Use this script to validate release metadata and checksum matching, and optionally post to issue `#5`:
+
+```powershell
+pwsh .\docs\scripts\Run-AlphaReleaseQaGate.ps1 `
+  -Tag v0.1.0-alpha `
+  -Repo tegllundj-dotcom/NulleCore-eAI `
+  -RequirePrerelease `
+  -IssueNumber 5
+```
+
 ## Account and Billing Hygiene
 
 - Review GitHub account/org warnings regularly (billing, actions quota, security prompts).
