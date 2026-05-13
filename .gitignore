@@ -1,0 +1,22 @@
+# Safety guardrails for public showcase repository
+.git/
+
+# Never include source code or project internals
+*.cs
+*.xaml
+*.sln
+*.csproj
+*.pdb
+
+# Never include secrets/keys
+*.env
+*.pem
+*.pfx
+*.key
+
+# Never include local build/output junk
+bin/
+obj/
+logs/
+temp/
+backup/
