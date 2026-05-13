@@ -1,78 +1,96 @@
-# NulleCore eAI
+# NulleCore-eAI
 
-NulleCore eAI is a local-first Windows AI workspace for private creative and productivity workflows.
+Local-first AI creative workstation for Windows focused on offline orchestration, workflow readiness, image pipelines, and controlled local AI integrations.
+
+**Status:** Public Alpha Preview  
+**Alpha warning:** This is an unsigned alpha build intended for testing and technical evaluation.
 
 ## Overview
 
-NulleCore eAI is a desktop control surface for running AI workflows on your own machine with user-controlled setup, readiness checks, and curated workflow governance.
+NulleCore-eAI is a curated desktop showcase for local AI workspace operations.  
+It focuses on controlled runtime readiness, workflow execution structure, and practical local-first usage on Windows.
 
-Status: **Alpha / Early Preview**
+## Feature Highlights
 
-## Positioning
+- Windows desktop runtime experience
+- Local-first architecture with user-controlled runtime setup
+- LM Studio connectivity/readiness support
+- ComfyUI connectivity/readiness support
+- Workflow-oriented structure for image operations
+- Modular orchestration foundation
+- Curated release packaging (MSI + ZIP + checksums)
 
-- Local-first
-- Privacy-first
-- User-controlled runtime setup
-- Experimental early-access software
+## Screenshots
 
-## Key Features
+![Home](screenshots/01-home.png)
+![Image Studio](screenshots/04-image-generate.png)
 
-- Windows desktop workspace experience
-- LM Studio readiness support
-- ComfyUI readiness support
-- Curated workflow layer
-- Local AI control surface
-- Installer-based distribution
+Additional views:
+- [Chat](screenshots/02-chat.png)
+- [Projects Overview](screenshots/03-projects-overview.png)
+- [Runtime Overview](screenshots/05-runtime-overview.png)
+- [Settings General](screenshots/06-settings-general.png)
 
-## What It Is Not
+## Downloads / Releases
 
-- Not a cloud AI service
-- Not a hosted SaaS
-- Not an open-source release yet
-- Not a replacement for LM Studio or ComfyUI
+- Latest alpha release: [v0.1.0-alpha](https://github.com/tegllundj-dotcom/NulleCore-eAI/releases/tag/v0.1.0-alpha)
+- Release notes: [docs/RELEASE_NOTES_v0.1.0-alpha.md](docs/RELEASE_NOTES_v0.1.0-alpha.md)
+- Release assets:
+  - `NulleCore-eAI-Setup-v0.1.0-alpha.msi`
+  - `NulleCore-eAI-v0.1.0-alpha-win-x64.zip`
+  - `CHECKSUMS.txt`
 
-## Installation
+Before install, verify integrity using [CHECKSUMS.txt](CHECKSUMS.txt).
 
-1. Go to `release-assets/`.
-2. Download either:
-   - `NulleCore-eAI-Setup-v0.1.0-alpha.msi`
-   - `NulleCore-eAI-v0.1.0-alpha-win-x64.zip`
-3. Verify file integrity with `CHECKSUMS.txt`.
-4. Run the MSI, or extract and run the executable from the ZIP package.
+## Local-first Philosophy
 
-## System Requirements
+- No forced cloud dependency for the showcase runtime model
+- User-controlled local runtime choices
+- External AI runtimes remain separate tools managed by the user
+- Controlled exposure and curated workflow examples
 
-- Windows 11 or Windows 10 x64
-- Local disk space for desktop app and optional local model workflows
-- Optional external tools:
-  - LM Studio (local LLM runtime)
-  - ComfyUI (local image workflow runtime)
+## Safety & Privacy
 
-## Known Limitations
+- Designed for local-first operation on user-controlled hardware
+- Do not share secrets, private logs, tokens, or credentials in public issue reports
+- Verify checksums before running installers or binaries
+- Read [SECURITY.md](SECURITY.md) before reporting issues
 
-- Alpha quality and active iteration
-- Unknown publisher warning may appear until code signing is finalized
-- Some product areas still rely on sample/static content in this stage
-- External runtimes are user-managed dependencies
+## Current Limitations
 
-## Roadmap Summary
+- Alpha preview quality; behavior may change between releases
+- Installer is currently unsigned
+- External runtimes (LM Studio/ComfyUI) require user setup
+- Workflow packs are still evolving and intentionally curated
 
-- Stabilize release pipeline and signing gate
-- Improve first-run onboarding for local runtimes
-- Expand curated workflow examples and validation
-- Continue polish for private creative AI workspace UX
+## Runtime Notes
 
-See `ROADMAP.md` for details.
+- LM Studio and ComfyUI are optional external dependencies
+- NulleCore-eAI does not replace those tools
+- Connectivity/readiness behavior depends on local runtime availability
+- See setup docs:
+  - [docs/lm-studio-setup.md](docs/lm-studio-setup.md)
+  - [docs/comfyui-setup.md](docs/comfyui-setup.md)
+  - [docs/local-ai-setup.md](docs/local-ai-setup.md)
 
-## Safety and Security Note
+## Roadmap
 
-- NulleCore eAI is designed for local-first use.
-- Do not place credentials, keys, or sensitive files into workflow inputs without proper local controls.
-- Verify release assets with checksums before installation.
+Near-term focus:
+- Signed installer and release hardening
+- Improved onboarding and runtime guidance
+- Curated workflow packs and governance expansion
+- Better diagnostics and execution approval controls
+- Documentation quality improvements
 
-See `SECURITY.md` for reporting and guidance.
+See [ROADMAP.md](ROADMAP.md) for the public roadmap.
 
-## Contact
+## Feedback & Issues
 
-- Contact placeholder: `security@nullecore.local`
-- Product updates placeholder: `hello@nullecore.local`
+- Start testing flow: [What To Test First](https://github.com/tegllundj-dotcom/NulleCore-eAI/issues/3)
+- Community thread: [Community Testing Hub](https://github.com/tegllundj-dotcom/NulleCore-eAI/issues/1)
+- Known limits tracker: [Known Limitations](https://github.com/tegllundj-dotcom/NulleCore-eAI/issues/2)
+- Launch announcement: [Public alpha call for testers](https://github.com/tegllundj-dotcom/NulleCore-eAI/issues/4)
+
+## License
+
+All rights reserved. See [LICENSE.md](LICENSE.md).

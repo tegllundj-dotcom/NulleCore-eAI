@@ -11,65 +11,94 @@ body:
         Thanks for testing NulleCore eAI alpha.
         Please keep reports concrete and reproducible where possible.
   - type: dropdown
+    id: install_type
+    attributes:
+      label: Install type
+      description: Which package did you use?
+      options:
+        - MSI installer
+        - ZIP portable package
+    validations:
+      required: true
+  - type: input
+    id: windows_version
+    attributes:
+      label: Windows version
+      description: Include edition + build if possible
+      placeholder: "Windows 11 Pro 24H2 (build 26100.x)"
+    validations:
+      required: true
+  - type: input
     id: area
     attributes:
-      label: Area
-      options:
-        - Installer
-        - Startup/Launch
-        - Home
-        - Chat
-        - Projects
-        - Image Studio
-        - Runtime
-        - Settings
-        - Performance
-        - Documentation
+      label: Feature area
+      description: Which area was involved?
+      placeholder: "Example: Image Studio / Runtime"
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      placeholder: "v0.1.0-alpha"
     validations:
       required: true
   - type: input
     id: env
     attributes:
-      label: Environment
-      description: Windows version + GPU/CPU context
-      placeholder: "Windows 11 24H2, NVIDIA RTX 4070"
+      label: Environment details
+      description: CPU/GPU context and anything relevant
+      placeholder: "NVIDIA RTX 4070, 32 GB RAM"
+    validations:
+      required: false
+  - type: dropdown
+    id: lmstudio_used
+    attributes:
+      label: LM Studio used?
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"
+    validations:
+      required: true
+  - type: dropdown
+    id: comfyui_used
+    attributes:
+      label: ComfyUI used?
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"
     validations:
       required: true
   - type: textarea
-    id: summary
+    id: expected
     attributes:
-      label: What happened?
-      description: Short factual summary
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
       label: Reproduction steps
-      description: Numbered steps if reproducible
+      description: Numbered steps for reliable reproduction
       placeholder: |
         1. Open app
-        2. Go to Image Studio
-        3. Click Generate
+        2. Navigate to Runtime
+        3. Run health check
+        4. Observe issue
     validations:
-      required: false
+      required: true
   - type: textarea
-    id: expected
+    id: logs_and_media
     attributes:
-      label: Expected result
+      label: Screenshots / logs
+      description: Attach screenshots or paste logs. Remove secrets, tokens, and private local paths first.
     validations:
       required: false
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual result
-    validations:
-      required: false
-  - type: textarea
-    id: logs
-    attributes:
-      label: Logs / screenshots
-      description: Paste relevant logs or attach screenshots. Remove secrets/private paths.
-    validations:
-      required: false
-

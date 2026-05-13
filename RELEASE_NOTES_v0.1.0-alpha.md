@@ -1,28 +1,5 @@
-# RELEASE NOTES v0.1.0-alpha
+# RELEASE NOTES (moved)
 
-## NulleCore eAI v0.1.0-alpha — Early Preview
+Canonical release notes for this version are maintained here:
 
-### Important Alpha Notice
-
-This is an Early Preview / Alpha release intended for public showcase validation and limited early user testing.
-
-### Platform
-
-- Windows x64 only
-
-### External Runtime Dependencies
-
-- LM Studio: optional external local dependency
-- ComfyUI: optional external local dependency
-
-NulleCore eAI does not bundle or replace LM Studio or ComfyUI.
-
-### Signing Notice
-
-Windows may show an unknown publisher warning until code signing is finalized.
-
-### Included Assets
-
-- `NulleCore-eAI-Setup-v0.1.0-alpha.msi`
-- `NulleCore-eAI-v0.1.0-alpha-win-x64.zip`
-- `CHECKSUMS.txt`
+- [docs/RELEASE_NOTES_v0.1.0-alpha.md](docs/RELEASE_NOTES_v0.1.0-alpha.md)
