@@ -35,6 +35,7 @@ Additional views:
 
 - Latest alpha release: [v0.1.0-alpha](https://github.com/tegllundj-dotcom/NulleCore-eAI/releases/tag/v0.1.0-alpha)
 - Release notes: [docs/RELEASE_NOTES_v0.1.0-alpha.md](docs/RELEASE_NOTES_v0.1.0-alpha.md)
+- Release verification log: [docs/RELEASE_VERIFICATION.md](docs/RELEASE_VERIFICATION.md)
 - Release assets:
   - `NulleCore-eAI-Setup-v0.1.0-alpha.msi`
   - `NulleCore-eAI-v0.1.0-alpha-win-x64.zip`
