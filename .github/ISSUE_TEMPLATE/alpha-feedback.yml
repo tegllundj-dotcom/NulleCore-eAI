@@ -1,0 +1,75 @@
+name: Alpha Feedback
+description: Share structured feedback for NulleCore eAI v0.1.0-alpha
+title: "[Alpha Feedback] "
+labels:
+  - feedback
+  - alpha
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing NulleCore eAI alpha.
+        Please keep reports concrete and reproducible where possible.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Installer
+        - Startup/Launch
+        - Home
+        - Chat
+        - Projects
+        - Image Studio
+        - Runtime
+        - Settings
+        - Performance
+        - Documentation
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Windows version + GPU/CPU context
+      placeholder: "Windows 11 24H2, NVIDIA RTX 4070"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Short factual summary
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Numbered steps if reproducible
+      placeholder: |
+        1. Open app
+        2. Go to Image Studio
+        3. Click Generate
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: false
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: Paste relevant logs or attach screenshots. Remove secrets/private paths.
+    validations:
+      required: false
+
