@@ -35,8 +35,10 @@ Before each public release update:
 1. Verify release assets are the intended final binaries.
 2. Recompute and upload `CHECKSUMS.txt`.
 3. Confirm release notes match shipped artifacts.
-4. Confirm issue template still matches current test goals.
-5. Keep release marked as prerelease while in alpha.
+4. Run the QA gate checklist in issue `#5 Release QA Gate (Alpha)` and post a run comment.
+5. Update `docs/RELEASE_VERIFICATION.md` with the new release tag and QA gate comment link.
+6. Confirm issue template still matches current test goals.
+7. Keep release marked as prerelease while in alpha.
 
 ## Account and Billing Hygiene
 
